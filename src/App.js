@@ -1,8 +1,10 @@
-import React from 'react';
+import React, {Component} from 'react';
 import logo from './logo.svg';
 import './App.css';
+import Konami from './components/Konami'
 
-function App() {
+class App extends Component {
+  render(){
   return (
     <div className="App">
       <header className="App-header">
@@ -10,6 +12,7 @@ function App() {
         <p>
           Edit <code>src/App.js</code> and save to reload.
         </p>
+        <Konami />
         <a
           className="App-link"
           href="https://reactjs.org"
@@ -21,6 +24,7 @@ function App() {
       </header>
     </div>
   );
+  }
 }
 
 export default App;
